@@ -1,0 +1,1 @@
+pushedForLaterHTML.push(['a', localStorage.getItem('a')]);

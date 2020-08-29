@@ -45,6 +45,23 @@ body{
 
 #alphabetDataPage{
     display: none;
+    margin-left: 2.2em;
+}
+
+#alphabetDataPage div{
+    margin-bottom: 2.5em;
+    
+}
+#alphabetDataPage textarea{
+    font-size: 2em;
+    width: 25em;
+}
+#alphabetDataPage h3{
+    font-size: 1.8em;
+}
+/* ===================== */
+#enterTextPage{
+    margin-left: 2.2em;
 }
 
 /* ======================== */
@@ -59,4 +76,22 @@ body{
 /* ============================ */
 #savePhrasesButton{
     font-size: 2em;
+}
+
+/* ================================= */
+
+/* =========================== */
+#jsToHTML{
+    overflow: scroll;
+    padding-bottom: 5em;
+}
+.texts{ 
+    /* changing printed out parsed stringe */
+    font-size: 3em;
+    /* padding-top: .8em; */
+    /* padding-bottom: .8em; */
+}
+.text2{
+    font-size: 1.7em;
+    margin-bottom: 1.6em;
 }

@@ -1,4 +1,4 @@
-var alphabet = ['armoor - to protect', 'ballons to pop', 'cars that run smoothly'];
+var alphabet = ['armor - to protect', 'ballons to pop', 'cars that run smoothly'];
 
 
 function storeMe(letter){
@@ -19,20 +19,23 @@ function runThrougStore(){
         storeMe(letters[i]);
     }
 }
+var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 function bringBackPhrases(){
-    var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    //pulls from localStorage 
     
     try{
         for(var i=0; i<letters.length; i++){
             if(localStorage.getItem(letters[i])!=undefined && localStorage.getItem(letters[i]) != ""){
                 document.getElementById(letters[i]).value  = localStorage.getItem(letters[i]);
+
+                alphabet[i] = localStorage.getItem(letters[i]);
             }
         }
 
     }catch(e){
         throw(e);
     }
-
+    console.log('alphabet', alphabet);
 
 }
 
