@@ -62,21 +62,33 @@ function takeInString(){
     console.log('splitted    '+ mainArray);
 }
 
+var  pushedForLaterHTML = [];
 function arrayOfDefined(){
-    var  pushedForLaterHTML = [];
+    pushedForLaterHTML = [];
     for(var i=0; i<mainArray.length; i++){
         //if array of splitted letters equals foo
         //push phrase
         //TODO - send array to HTML
         if(mainArray[i]=="a"){
-            pushedForLaterHTML.push(alphabet[0]);
+            pushedForLaterHTML.push(['a', alphabet[0]]);
         }
         if(mainArray[i]=="b"){
             pushedForLaterHTML.push(alphabet[1]);
         }
         if(mainArray[i]=="c"){
-            pushedForLaterHTML.push(alphabet[2]);
+            pushedForLaterHTML.push(['c', alphabet[0]]);
         }
     }
     console.log('pushedForLaterHTML', pushedForLaterHTML);
+}
+
+//=========================================
+
+function HTMLme(){
+    var HTMLString = "";
+    for(var i=0; i<pushedForLaterHTML.length; i++){
+        HTMLString+="<div><h1>"+pushedForLaterHTML[i][0]+"</h1>"+pushedForLaterHTML[i][1]+"</div><br>";
+    }
+
+    document.getElementById('jsToHTML').innerHTML = HTMLString;
 }
