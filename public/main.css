@@ -1,0 +1,57 @@
+body{
+    width: 100%;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  display: block;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #555;
+  color: #f1f1f1;
+  font-size: 3em;
+
+}
+#atozHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content{
+    padding-top: 4em;
+}
+
+#alphabetDataPage{
+    display: none;
+}
+
+/* ======================== */
+#enteredTextValue{
+    width: 80%;
+    font-size: 3em;
+}
+#make{
+    font-size: 2em;
+}
