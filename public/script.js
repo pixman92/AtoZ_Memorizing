@@ -12,8 +12,9 @@ window.onload = ()=>{
     });
     document.getElementById('alphabetDataPageDivButton').addEventListener('click', ()=>{
         hide();
-        show('alphabetDataPage');
+        show('alphabetDataPage');   //shows alphabet page
         // show('footer');
+        bringBackPhrases(); //function to repopulate abc(s)
     });
 
     //entered text - main page, functions
@@ -25,6 +26,7 @@ window.onload = ()=>{
 
     document.getElementById('savePhrasesButton').addEventListener('click', ()=>{
         runThrougStore();
+        alert("Saved!");
     });
 
 }
