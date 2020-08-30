@@ -1,5 +1,5 @@
 body{
-    width: 100%;
+    width: 80d%;
 }
 .footer {
   position: fixed;
@@ -9,7 +9,7 @@ body{
   background-color: blue;
   color: white;
   text-align: center;
-  font-size: 4em;
+  font-size: 2em;
   display: block;
 }
 
@@ -54,7 +54,7 @@ body{
 }
 #alphabetDataPage textarea{
     font-size: 2em;
-    width: 25em;
+    width: 15em;
 }
 #alphabetDataPage h3{
     font-size: 1.8em;

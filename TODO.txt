@@ -1,0 +1,4 @@
+Work on:
+    - Firebase Auth
+    - getting saved onto Firebase
+    - retriving from Firebase

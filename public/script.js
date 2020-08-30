@@ -14,15 +14,48 @@ window.onload = ()=>{
         hide();
         show('alphabetDataPage');   //shows alphabet page
         // show('footer');
-        bringBackPhrases(); //function to repopulate abc(s)
+        bringBack(); //function to repopulate abc(s)
     });
 
     //entered text - main page - to enter and parse text
     document.getElementById('make').addEventListener('click', ()=>{
         takeInString();
-        bringBackPhrases();
+        bringBack();
         arrayOfDefined();
         HTMLme();
+
+        async function main (num){
+            try{
+                let first = await one();
+                let second = await two(first);        
+                let third = await three(second);   
+                let forth = await four(third);         
+            }catch(e){
+                console.log(e);
+                throw e;
+            }
+        
+        }
+        
+        async function one(){
+            takeInString();
+            console.log('first');
+        }
+        
+        async function two(){
+            bringBack();
+            console.log('second');
+        }
+        async function three(){
+            arrayOfDefined();
+            console.log('third');
+        }
+        async function four(){
+            HTMLme();
+            console.log('forth');
+        }
+
+
     });
 
 
@@ -59,7 +92,7 @@ function takeInString(){
     }else{
         mainString = document.getElementById('enteredTextValue').value;
     }
-    
+    mainString = mainString.toLowerCase();
     mainArray = mainString.split("");
     console.log('splitted    '+ mainArray);
 }
